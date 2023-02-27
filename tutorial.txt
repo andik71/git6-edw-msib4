@@ -1,0 +1,50 @@
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4
+$ git clone https://github.com/andik71/git6-edw-msib4.git
+Cloning into 'git6-edw-msib4'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4
+$ ls
+git6-edw-msib4/
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4
+$ cd git6-edw-msib4
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4/git6-edw-msib4 (main)
+$ git branch andikaDwiyanto
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4/git6-edw-msib4 (main)
+$ git checkout andikaDwiyanto
+Switched to branch 'andikaDwiyanto'
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4/git6-edw-msib4 (andikaDwiyanto)
+$ git add .
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4/git6-edw-msib4 (andikaDwiyanto)
+$ git commit -m "Praktek Kel 6"
+[andikaDwiyanto e700e8b] Praktek Kel 6
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file_andika.txt
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4/git6-edw-msib4 (andikaDwiyanto)
+$ git push -u origin andikaDwiyanto
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 139.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'andikaDwiyanto' on GitHub by visiting:
+remote:      https://github.com/andik71/git6-edw-msib4/pull/new/andikaDwiyanto
+remote:
+To https://github.com/andik71/git6-edw-msib4.git
+ * [new branch]      andikaDwiyanto -> andikaDwiyanto
+branch 'andikaDwiyanto' set up to track 'origin/andikaDwiyanto'.
+
+andik@DESKTOP-C1VRDDQ MINGW64 /c/xampp/htdocs/git_msib4/git6-edw-msib4 (andikaDwiyanto)
+$
