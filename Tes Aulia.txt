@@ -1,1 +1,158 @@
 File Tes Aulia
+
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (aulia)
+$ git branch
+* aulia
+  main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (aulia)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git fetch --all
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 23 (delta 6), reused 17 (delta 3), pack-reused 0
+Unpacking objects: 100% (23/23), 3.26 KiB | 2.00 KiB/s, done.
+From https://github.com/andik71/git6-edw-msib4
+   2a115c2..764ccad  main           -> origin/main
+ * [new branch]      JonesZ         -> origin/JonesZ
+ * [new branch]      Nada           -> origin/Nada
+ * [new branch]      andikaDwiyanto -> origin/andikaDwiyanto
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git pull --all
+Updating 2a115c2..764ccad
+Fast-forward
+ Nada.txt        |  1 +
+ README.md       | 17 ++++++++++++++++-
+ Tes Aulia.txt   |  1 +
+ file_andika.txt |  0
+ jns.txt         |  1 +
+ tutorial.txt    | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 69 insertions(+), 1 deletion(-)
+ create mode 100644 Nada.txt
+ create mode 100644 Tes Aulia.txt
+ create mode 100644 file_andika.txt
+ create mode 100644 jns.txt
+ create mode 100644 tutorial.txt
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch
+  aulia
+* main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/JonesZ
+  origin/Nada
+  origin/andikaDwiyanto
+  origin/aulia
+  origin/main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch
+  aulia
+* main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch --track ${remote#origin} $remote
+  aulia
+* main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch
+  aulia
+* main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/JonesZ
+  origin/Nada
+  origin/andikaDwiyanto
+  origin/aulia
+  origin/main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git fetch -tf --all
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch
+  aulia
+* main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch -r | grep -v master | awk {print\$1} | sed 's/^origin\/\(.*\)$/\1 &/' | xargs -n2 git checkout -b
+fatal: 'HEAD' is not a valid branch name
+Switched to a new branch 'JonesZ'
+branch 'JonesZ' set up to track 'origin/JonesZ'.
+Switched to a new branch 'Nada'
+branch 'Nada' set up to track 'origin/Nada'.
+Switched to a new branch 'andikaDwiyanto'
+branch 'andikaDwiyanto' set up to track 'origin/andikaDwiyanto'.
+fatal: a branch named 'aulia' already exists
+fatal: a branch named 'main' already exists
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (andikaDwiyanto)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch
+  JonesZ
+  Nada
+  andikaDwiyanto
+  aulia
+* main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch -a
+  JonesZ
+  Nada
+  andikaDwiyanto
+  aulia
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/JonesZ
+  remotes/origin/Nada
+  remotes/origin/andikaDwiyanto
+  remotes/origin/aulia
+  remotes/origin/main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/JonesZ
+  origin/Nada
+  origin/andikaDwiyanto
+  origin/aulia
+  origin/main
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (main)
+$ git checkout aulia
+Switched to branch 'aulia'
+Your branch is up to date with 'origin/aulia'.
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (aulia)
+$ git status
+On branch aulia
+Your branch is up to date with 'origin/aulia'.
+
+nothing to commit, working tree clean
+
+ASUS A516K@RizkiAulia MINGW64 /c/xampp/htdocs/eduwork-msib4/git6-edw-msib4 (aulia)
+$
